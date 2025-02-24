@@ -1,0 +1,99 @@
+body{
+    background-image: url("/images/GameBackground.png");
+    background-size: cover;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-rows: auto 200px 200px 60px;
+    row-gap: 4vh;
+}
+.heading{
+    background-color: rgb(0, 95, 30);
+    color: #ffffff;
+    line-height: 5vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fa-house{
+    float: left;
+    margin: 3vh 3vw;
+    font-size: 4vh;
+    color: #ffffff;
+}
+.fa-house:active{
+    color: #d1d1d1e2;
+}
+footer{ 
+    font-size: medium;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin-bottom: 6px;
+}
+.computer,.player{
+    padding: 12px;
+    background-color: #332f2f;
+    border-radius: 10px;
+    margin: 0 10vw;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.box img{
+    width: 100%;
+}
+.name{
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(1, 145, 47);
+    width: 150px;
+    margin: auto;
+    line-height: 25px;
+    border-radius: 5px 5px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.buttons{
+    padding: 5px;
+    background-color: #332f2f;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+input[type="button"]{
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    color: #ffffff;
+    background-color: rgb(1, 145, 47);
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="button"]:active{
+    background-color: rgb(1, 111, 38);
+}
+@media screen and (min-width: 650px){
+    .heading{
+        line-height: 10vh;
+    }
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 200px 60px;
+        row-gap: 15vh;
+    }
+    body div:nth-child(4){
+        grid-column: span 2;
+        margin: 0 10vw;
+    }
+    body div:nth-child(1){
+        grid-column: span 2;
+    }
+    .computer,.player{
+        margin: 0 10vw
+    }
+}
